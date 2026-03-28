@@ -1,0 +1,13 @@
+# Active Learning (этап 4)
+text_column: text
+label_column: label
+random_state: 42
+
+test_size: 0.2
+seed_size: 128
+n_iterations: 6
+batch_size: 48
+
+# Основная стратегия vs baseline (random)
+primary_strategy: entropy
+baseline_strategy: random

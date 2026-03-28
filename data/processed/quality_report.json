@@ -1,0 +1,57 @@
+{
+  "n_rows": 2000,
+  "missing": {
+    "by_column": {
+      "text": {
+        "count": 0,
+        "ratio": 0.0
+      },
+      "audio": {
+        "count": 2000,
+        "ratio": 1.0
+      },
+      "image": {
+        "count": 2000,
+        "ratio": 1.0
+      },
+      "label": {
+        "count": 0,
+        "ratio": 0.0
+      },
+      "source": {
+        "count": 0,
+        "ratio": 0.0
+      },
+      "collected_at": {
+        "count": 0,
+        "ratio": 0.0
+      }
+    },
+    "total_missing_cells": 4000
+  },
+  "duplicates": {
+    "n_duplicate_rows": 2,
+    "subset": [
+      "text",
+      "label"
+    ]
+  },
+  "outliers": {
+    "text_length_iqr": {
+      "column": "text",
+      "count": 191,
+      "low": -2093.75,
+      "high": 6852.25,
+      "k_iqr": 1.5
+    }
+  },
+  "imbalance": {
+    "label_column": "label",
+    "counts": {
+      "pos": 1302,
+      "neg": 698
+    },
+    "entropy": 0.9331717984240897,
+    "majority_minority_ratio": 1.8653295128939829
+  }
+}

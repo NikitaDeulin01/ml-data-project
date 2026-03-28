@@ -1,0 +1,7 @@
+metric,before,after,delta
+n_rows,2000.0,1808.0,-192.0
+total_missing_cells,4000.0,0.0,-4000.0
+n_duplicate_rows,2.0,0.0,-2.0
+outliers_text_length_iqr,191.0,64.0,-127.0
+class_entropy,0.9331717984240897,0.9190315324533354,-0.014140265970754351
+majority_minority_ratio,1.8653295128939829,1.9933774834437086,0.12804797054972572

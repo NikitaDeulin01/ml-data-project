@@ -1,0 +1,1 @@
+{"data": {"text": "Пример текста для классификации.", "id": "row_0"}, "predictions": [{"result": [{"from_name": "sentiment", "to_name": "text", "type": "choices", "value": {"choices": ["positive"]}}], "score": 0.91}]}

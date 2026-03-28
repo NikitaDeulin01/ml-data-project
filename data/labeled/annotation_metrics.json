@@ -1,0 +1,10 @@
+{
+  "kappa": 0.9259639429114297,
+  "agreement": 0.9668141592920354,
+  "label_dist": {
+    "pos": 1186,
+    "neg": 622
+  },
+  "confidence_mean": 0.7598017933816211,
+  "note": null
+}

@@ -1,0 +1,33 @@
+# RU, бинарная тональность (neg/pos), ровно 2000 строк (1000 + 1000).
+# 1) train.csv с Hub
+# 2) HTTP: подряд dev.csv + test.csv (один «API»-источник, без pyarrow / без Datasets Server)
+
+output:
+  path: data/raw/unified_dataset.csv
+  save: true
+
+sources:
+  - type: hf_dataset
+    loader: hub_csv
+    name: sepidmnorozy/Russian_sentiment
+    hf_file: train.csv
+    max_rows: 1000
+    text_column: text
+    label_column: label
+    source_id: hf:sepidmnorozy/Russian_sentiment:train
+    label_map:
+      "0": neg
+      "1": pos
+
+  - type: api
+    api_kind: csv_http_concat
+    endpoints:
+      - https://huggingface.co/datasets/sepidmnorozy/Russian_sentiment/resolve/main/dev.csv
+      - https://huggingface.co/datasets/sepidmnorozy/Russian_sentiment/resolve/main/test.csv
+    max_rows: 1000
+    text_field: text
+    label_field: label
+    source_id: api:http:hf-hub:sepidmnorozy/Russian_sentiment:dev+test
+    label_map:
+      "0": neg
+      "1": pos

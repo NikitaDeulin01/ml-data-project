@@ -1,0 +1,9 @@
+# AnnotationAgent (этап 3)
+modality: text
+text_column: text
+gold_label_column: label
+task: sentiment_classification
+
+# Порог для review_queue.csv (ниже — в очередь ручной проверки)
+confidence_threshold: 0.55
+review_queue_path: review_queue.csv

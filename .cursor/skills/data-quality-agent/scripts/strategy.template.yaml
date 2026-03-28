@@ -1,0 +1,11 @@
+# Скопируй в проект и переименуй при необходимости.
+# Ключи должны совпадать с тем, что реально поддерживает твой DataQualityAgent.fix().
+
+missing: median # пример: median | mean | drop_rows | mode | fill_value:<str>
+duplicates: drop # пример: drop | keep_first | keep_last
+outliers: clip_iqr # пример: clip_iqr | clip_zscore | remove
+
+# Опционально:
+# label_column: label
+# iqr_multiplier: 1.5
+# z_threshold: 3.0

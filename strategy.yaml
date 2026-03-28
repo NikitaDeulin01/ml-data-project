@@ -1,0 +1,8 @@
+# Стратегия очистки для DataQualityAgent.fix()
+# Альтернатива conservative: missing=fill_modal_empty, duplicates=drop, outliers=none, imbalance=none
+
+strategy:
+  missing: fill_modal_empty
+  duplicates: drop
+  outliers: clip_iqr_text_length
+  imbalance: none
